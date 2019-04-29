@@ -34,13 +34,39 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+Semantic HTML  is HTML that introduces meaning to the web page rather than just presentation. For example, a ```<p>``` tag indicates that the enclosed text is a paragraph. This is both semantic and presentational, because people know what paragraphs are and browsers know how to display them.
+
+On the flip side of this equation, tags like ```<b>``` and ```<i>``` are not semantic, because they define only how the text should look (bold or italic) and do not provide any additional meaning to the markup.
+
+Examples of semantic HTML tags include the header tags ```<h1>``` through ```<h6>```, ```<blockquote>```, ```<code>``` and ```<em>```. There are many more semantic HTML tags that can be used as you build a standards-compliant website.
+
+
+
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+|               Block            |       Inline              
+|--------------------------------|--------------------
+| Ignores vertical-align property| Subject to vertical-align property
+|                                |
+|Can have margins and/or padding | Will ignore top and bottom margin settings,but will apply left and right margins,and any padding
+|                                |
 
 3. What are the 4 areas of the box model?
 
+    i. Content edge 
+    ii. Padding edge 
+    iii. Border edge 
+    iv. Margin edge.
+
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+    Cross axis
+
 5. Explain why git is valuable to a team of developers.
+
+     Git allows teams to efficiently and effectively contribute code to the same project in an asynchronous way. This empowers teams to collaborate better and thus allows them to solve bigger and more complex problems.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

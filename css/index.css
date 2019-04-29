@@ -60,15 +60,62 @@ h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
+    color: #000;
 }
 
 p {
     line-height: 1.4;
+    color: #000;
+}
+
+a   {
+    color: #333;
+    text-decoration: none;
 }
 
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+
+.header-content-container   {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header-content-container nav   {
+    display: flex;
+    align-items: center;
+}
+
+.header-content-container nav  ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 14px;
+}
+
+.header-content-container nav  ul a     {
+    padding: 5px 10px;
+    color: #555;
+    margin-right: 3em;
+}
+
+
+.burger     {
+    display: none;
+}
+
+.burger div     {
+    width: 25px;
+    height: 5px;
+    background-color: #222;
+    margin: 3px;
 }
 
 .top-content {
@@ -78,17 +125,42 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
+.top-content img    {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    opacity: 0;
+    animation-name: banner;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards
+}
+
+@keyframes banner  {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+    margin-top: 18px;
 }
 
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+.top-content .text-container-1 {
+    padding: 0 1%;
+    padding-bottom: 20px;
+    margin-top: 18px;
 }
+
 
 .middle-content h2 {
     padding: 0 2%;
@@ -112,6 +184,177 @@ p {
     justify-content: center;
 }
 
+.boxes .box.box1  {
+    background-color: teal;
+}
+
+.middle-content  .box.box2  {
+    background-color: gold;
+}
+
+.middle-content  .box.box3  {
+    background-color: cadetblue;
+}
+
+.middle-content  .box.box4  {
+    background-color: coral;
+}
+
+.middle-content  .box.box5  {
+    background-color: crimson;
+}
+
+.middle-content  .box.box6  {
+    background-color: forestgreen;
+}
+
+.middle-content  .box.box7  {
+    background-color: darkorchid;
+}
+
+.middle-content  .box.box8  {
+    background-color: hotpink;
+}
+
+.middle-content  .box.box9  {
+    background-color: indigo;
+}
+
+.middle-content  .box.box10  {
+    background-color: dodgerblue;
+}
+
+
+.middle-content {
+    margin-bottom: 20px;
+    position: relative;
+    animation-name: content;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    margin-bottom: 20px;
+    
+}
+
+.contact    {
+    border: 1px solid #222;
+}
+
+.middle-content .contact-header      {
+    text-align: center;
+    padding: 20px 2px;
+}
+
+.middle-content .contact-header h2  {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.middle-content .info-container     {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.middle-content .info-container .info   {
+    flex: 0 0 33.3%;
+    padding: 10px;
+}
+
+.middle-content .icon   {
+    border: 4px solid #2A587F;
+    background-color: #2A587F;
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.middle-content .icon:hover     {
+    background-color: #fff;
+    color: #2A587F;
+}
+
+.middle-content .info-container .info  h3   {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+
+@keyframes content {
+    0% {
+        left: -1000px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.middle-content .services   {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.middle-content .services .services-item    {
+    width: 48%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px dotted #000;
+    margin-bottom: 20px;
+}
+
+.middle-content .services .services-item img    {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.ctn    {
+    border: 1px solid #222;
+    width: 120px;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    opacity: 0;
+    animation-name: ctn;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards
+}
+
+@keyframes ctn  {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row .single-input  {
+    width: 46%;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -125,6 +368,81 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/* Contact form */
+.contact-form   {
+    border: 1px solid red;
+}
+
+.contact-form .form-address-container   {
+    border: 1px solid yellow;
+    display: flex;
+}
+
+.contact-form .form-address-container .address-item  {
+    width: 50%;
+}
+
+
+.mb-10  {
+    margin-bottom: 10px;
+}
+
+.d-flex     {
+    display: flex;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.btn-primary {
+    line-height: 40px;
+    background: hsl(120, 61%, 38%);
+    width: 100%;
+    cursor: pointer;
+    color: hsl(207, 37%, 89%);
+    outline: none;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+}
+
+
+.single-input input    {
+    width: 100%;
+    line-height: 40px;
+    padding: 0 20px;
+    background: #ccc;
+    border: none;
+    color: #222;
+    outline: none;
+}
+
+.single-input textarea {
+    width: 100%;
+    line-height: 50px;
+    padding: 0 20px;
+    height: 140px;
+    resize: none;
+    background: #fff;
+    outline: none;
+    background: #ccc;
+}
+
+
 
 footer {
     width: 100%;
@@ -143,4 +461,23 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 740px)    {
+    /* body    {
+        overflow-x: hidden;
+    }
+
+    .header-content-container nav  ul{
+        border: 1px solid red;
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 12vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        
+    } */
 }
